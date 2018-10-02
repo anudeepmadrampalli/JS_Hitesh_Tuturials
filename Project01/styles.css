@@ -1,0 +1,121 @@
+body{
+    background: rgb(195, 235, 199);
+}
+
+   
+#container{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    background: rgb(137, 199, 214);
+    height: 800px;
+    overflow-y: auto;
+    color: black;
+    border:10px solid lightslategray;
+    border-radius: 10px;
+}
+
+#container h1{
+    margin-top: 50ox;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#container ul{
+    margin-top: 50px;
+    padding-left: 0px;
+}
+
+#container ul li{
+    list-style: none;
+    border: 2px solid teal;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    height: 40px;
+    margin: 5px auto;
+    text-align: left;
+}
+
+#container ul li label{
+    margin: 0 auto;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+#container ul li #check{
+    float : left;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    -webkit-appearance: none;
+    border: 2px solid rgb(15, 17, 1);
+    position: relative;
+    outline: 0;
+}
+
+#container ul li #check:checked:after{
+    content: '\2714';
+    font-size: 20px;
+    position: absolute;
+    top : 0px;
+    left: 7px;
+    color: black;
+} 
+
+#container ul li input[type="chekbox"]:checked+ label{
+    text-decoration: line-through;
+    color: grey;
+}
+
+#container .controls{
+    width: 60%;
+    margin: auto;
+}
+
+#container .controls #input:focus{
+ outline: 0;
+}
+
+#container .controls button{
+    width: 100%;
+    background: white;
+    border: none;
+    height: 30px;
+    margin-left: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+#container .controls button :focus{
+    outline: 0;
+}
+
+#container .controls button :hover{
+    transform: scale(1.05);
+}
+
+#container .controls #add{
+    background-color: rgb(207, 98, 24);
+    border-radius: 10px;
+}
+
+#container .controls #remove{
+    background-color: rgb(20, 207, 67);
+    border-radius: 10px;
+}
+
+#container .mycheck{
+    opacity: 1;
+    border-radius: 10px;
+}
+
+.visual {
+    opacity: 1 !important;
+    border-radius: 10px;
+}
+
+
